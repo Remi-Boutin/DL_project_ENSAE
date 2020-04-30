@@ -7,3 +7,6 @@ We will try to follow and adapt the [detailed walk-through](http://www.cs.toront
 ### List of Github or Medium pages you might find useful to build GANs
 
 - [Build GANs from scratch 1](https://medium.com/ai-society/gans-from-scratch-1-a-deep-introduction-with-code-in-pytorch-and-tensorflow-cb03cdcdba0f) and the [github repo](https://github.com/diegoalejogm/gans)
+- [DCGANs implementation](https://github.com/eriklindernoren/PyTorch-GAN/blob/master/implementations/dcgan/dcgan.py)
+- [Cycle GANs](https://github.com/eriklindernoren/PyTorch-GAN/blob/master/implementations/cyclegan/cyclegan.py)
+- [Wassertein GANs](https://github.com/eriklindernoren/PyTorch-GAN#wasserstein-gan)
