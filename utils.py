@@ -66,7 +66,7 @@ class Logger:
         self.save_torch_images(horizontal_grid, grid, epoch, n_batch)
 
     def save_torch_images(self, horizontal_grid, grid, epoch, n_batch, plot_horizontal=True):
-        out_dir = './data/images/{}'.format(self.data_subdir)
+        out_dir = './Results/data/images/{}'.format(self.data_subdir)
         Logger._make_dir(out_dir)
 
         # Plot and save horizontal
@@ -86,7 +86,7 @@ class Logger:
         plt.close()
 
     def _save_images(self, fig, epoch, n_batch, comment=''):
-        out_dir = './data/images/{}'.format(self.data_subdir)
+        out_dir = './Results/data/images/{}'.format(self.data_subdir)
         Logger._make_dir(out_dir)
         fig.savefig('{}/{}_epoch_{}_batch_{}.png'.format(out_dir,
                                                          comment, epoch, n_batch))
@@ -110,7 +110,7 @@ class Logger:
         print('D(x): {:.4f}, D(G(z)): {:.4f}'.format(d_pred_real.mean(), d_pred_fake.mean()))
 
     def save_models(self, generator, discriminator, epoch):
-        out_dir = './data/models/{}'.format(self.data_subdir)
+        out_dir = './Results/data/models/{}'.format(self.data_subdir)
         Logger._make_dir(out_dir)
         torch.save(generator.state_dict(),
                    '{}/G_epoch_{}'.format(out_dir, epoch))
